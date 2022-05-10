@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>QSWebAPI</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\QSWebAPI.data.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\QSWebApi.Data.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="QSWebAPI.Data\bin\Debug\net6.0\QSWebAPI.Data.deps.json" />
+    </ItemGroup>
+
+</Project>

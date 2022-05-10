@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/koen/Workspace/web-api/qs-web-api/qs-web-api.csproj": {}
+    "/Users/koen/Workspace/web-api/QSWebAPI.csproj": {}
   },
   "projects": {
-    "/Users/koen/Workspace/web-api/qs-web-api/qs-web-api.csproj": {
+    "/Users/koen/Workspace/web-api/QSWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/koen/Workspace/web-api/qs-web-api/qs-web-api.csproj",
-        "projectName": "qs-web-api",
-        "projectPath": "/Users/koen/Workspace/web-api/qs-web-api/qs-web-api.csproj",
+        "projectUniqueName": "/Users/koen/Workspace/web-api/QSWebAPI.csproj",
+        "projectName": "QSWebAPI",
+        "projectPath": "/Users/koen/Workspace/web-api/QSWebAPI.csproj",
         "packagesPath": "/Users/koen/.nuget/packages/",
-        "outputPath": "/Users/koen/Workspace/web-api/qs-web-api/obj/",
+        "outputPath": "/Users/koen/Workspace/web-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/koen/.nuget/NuGet/NuGet.Config"
@@ -25,7 +25,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/koen/Workspace/web-api/QSWebApi.Data/QSWebApi.Data.csproj": {
+                "projectPath": "/Users/koen/Workspace/web-api/QSWebApi.Data/QSWebApi.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +61,58 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/koen/Workspace/web-api/QSWebApi.Data/QSWebApi.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/koen/Workspace/web-api/QSWebApi.Data/QSWebApi.Data.csproj",
+        "projectName": "QSWebApi.Data",
+        "projectPath": "/Users/koen/Workspace/web-api/QSWebApi.Data/QSWebApi.Data.csproj",
+        "packagesPath": "/Users/koen/.nuget/packages/",
+        "outputPath": "/Users/koen/Workspace/web-api/QSWebApi.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/koen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
