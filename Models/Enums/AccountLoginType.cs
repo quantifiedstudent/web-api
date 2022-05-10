@@ -1,4 +1,4 @@
-namespace qs_web_api.Models.Enums;
+namespace QSWebAPI.Models.Enums;
 
 public enum AccountLoginType
 {
