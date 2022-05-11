@@ -1,9 +1,5 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using QSWebAPI.Models;
 
-namespace QSWebAPI.Repositories.Base;
+namespace Qs.Presentation.WebApi.Repositories.Base;
 
 public interface IRepository<TEntity> where TEntity : class
 {

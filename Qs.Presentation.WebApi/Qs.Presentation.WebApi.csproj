@@ -4,7 +4,6 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>QSWebAPI</RootNamespace>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
@@ -20,11 +19,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\project.assets.json" />
-      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\project.packagespec.json" />
-      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\QSWebAPI.data.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="QSWebApi.Data\obj\QSWebApi.Data.csproj.nuget.dgspec.json" />
-      <_ContentIncludedByDefault Remove="QSWebAPI.Data\bin\Debug\net6.0\QSWebAPI.Data.deps.json" />
+      <Folder Include="Data" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Qs.Domain.IoC\Qs.Domain.IoC.csproj" />
     </ItemGroup>
 
 </Project>
