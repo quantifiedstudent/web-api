@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Qs.Domain.Abstractions;
+namespace Qs.Persistence.Abstractions;
 
-public interface IDataContext
+public interface IDataContext : IContext
 {
     public interface IApplicationDbContext
     {

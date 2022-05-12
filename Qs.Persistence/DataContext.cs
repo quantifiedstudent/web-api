@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Qs.Domain.Abstractions;
+using Qs.Persistence.Abstractions;
 
-namespace Qs.Presentation.WebApi.Data;
+namespace Qs.Persistence;
 
 public class DataContext : DbContext, IDataContext
 {

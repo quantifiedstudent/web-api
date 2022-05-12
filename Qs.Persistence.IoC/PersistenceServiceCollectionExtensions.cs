@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Qs.Presentation.WebApi.Data;
+using Qs.Persistence;
 
 namespace Qs.Domain.IoC;
 
