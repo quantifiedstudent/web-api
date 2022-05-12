@@ -20,4 +20,9 @@
       <ProjectReference Include="..\Qs.Domain.IoC\Qs.Domain.IoC.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="docker-compose.yml" />
+      <None Remove="Dockerfile" />
+    </ItemGroup>
+
 </Project>

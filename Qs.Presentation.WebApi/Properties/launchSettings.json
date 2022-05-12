@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "qs_web_api": {
+    "QS: Web API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
