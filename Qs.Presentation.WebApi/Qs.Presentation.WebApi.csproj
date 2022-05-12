@@ -11,18 +11,9 @@
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Data" />
-    </ItemGroup>
-
+    
     <ItemGroup>
       <ProjectReference Include="..\Qs.Domain.IoC\Qs.Domain.IoC.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="docker-compose.yml" />
-      <None Remove="Dockerfile" />
     </ItemGroup>
 
 </Project>
