@@ -1,6 +1,8 @@
 const { ApolloServer, gql } = require('apollo-server');
 
 const MockData = require("./dataSources/mock");
+const CanvasData = require("./dataSources/canvas");
+const {CanvasAPI} = require("./dataSources/canvas/canvas-api");
 
 const typeDef = gql`
   type Query
@@ -9,17 +11,18 @@ const typeDef = gql`
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
 const server = new ApolloServer({
-    typeDefs: [typeDef, MockData.typeDef],
-    resolvers: [MockData.resolvers ],
+    typeDefs: [typeDef, MockData.typeDef, CanvasData.typeDef],
+    resolvers: [MockData.resolvers, CanvasData.resolvers ],
     dataSources: () => {
         return {
-            mockDataAPI: new MockData.MockDataApi()
+            mockDataAPI: new MockData.MockDataApi(),
+            canvasAPI: new CanvasData.CanvasAPI()
         }
     },
     context: ({req}) => {
         return {
             // Add headers to the context, so we can forward them in the resolvers
-            headers: req.headers
+            authorization: req.headers.authorization,
         }
     }
     // csrfPrevention: true,
