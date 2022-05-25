@@ -21,8 +21,12 @@
   "homepage": "https://github.com/quantifiedstudent/web-api#readme",
   "dependencies": {
     "apollo-datasource-rest": "^3.5.3",
-    "apollo-server": "^3.7.0",
+    "apollo-server-core": "^3.8.1",
+    "apollo-server-express": "^3.8.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "graphql": "^16.5.0",
+    "http": "^0.0.1-security",
     "https": "^1.0.0"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-const {gql} = require('apollo-server');
+const {gql} = require('apollo-server-express');
 
 const typeDef = gql`
     type Enrollments {
@@ -14,7 +14,7 @@ const typeDef = gql`
       ics: String
     }
     
-    type CanvasCourse {
+    type CanvasCourses {
       id: Int
       name: String
       account_id: Int
@@ -51,7 +51,7 @@ const typeDef = gql`
 
     
     extend type Query {
-        CanvasCourse: [CanvasCourse]
+        CanvasCourses: [CanvasCourses]
     }
     `;
 
