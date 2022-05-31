@@ -4,9 +4,9 @@ const loggingPlugin = {
 
     async requestDidStart(requestContext) {
 
-        console.log('Request started! Query:\n' +
-
-            requestContext.request.query);
+        console.log('Request started! Query:\n'
+           // + requestContext.request.query
+        );
 
 
         return {
