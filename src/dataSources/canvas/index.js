@@ -4,7 +4,8 @@ const {typeDef} = require('./typeDef');
 
 
 module.exports = {
-    CanvasAPI,
+    name: 'CanvasData',
+    dataSource: CanvasAPI,
     resolvers,
     typeDef
 }

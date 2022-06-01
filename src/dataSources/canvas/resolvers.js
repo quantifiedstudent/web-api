@@ -1,7 +1,7 @@
 const resolvers = {
     Query: {
         CanvasCourses: async (_, __, { dataSources }) => {
-            return dataSources.canvasAPI.getCourseData();
+            return dataSources.CanvasData.getCourseData();
         },
     }
 }

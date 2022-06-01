@@ -10,21 +10,34 @@ const typeDef = gql`
     type Query
 `;
 
+const sources = [
+    MockData,
+    CanvasData
+];
+
+const typeDefs = [typeDef];
+const resolvers = [];
+const dataSources = {};
+
 async function startApolloServer(expressApp) {
     const httpServer = http.createServer(expressApp);
+    sources.forEach(source => {
+        typeDefs.push(source.typeDef);
+        resolvers.push(source.resolvers);
+        dataSources[source.name] = new source.dataSource();
+    });
+
     const server = new ApolloServer({
-        typeDefs: [typeDef, MockData.typeDef, CanvasData.typeDef],
-        resolvers: [MockData.resolvers, CanvasData.resolvers ],
+        typeDefs,
+        resolvers,
         dataSources: () => {
-            return {
-                mockDataAPI: new MockData.MockDataApi(),
-                canvasAPI: new CanvasData.CanvasAPI()
-            }
+            return dataSources;
         },
         context: ({req}) => {
+            console.log(req.headers)
             return {
                 // Add headers to the context, so we can forward them in the resolvers
-                Authorization: req.headers.Authorization,
+                Authorization: req.headers.authorization,
             }
         },
         plugins: [ApolloServerPluginDrainHttpServer({ httpServer }), LoggingPlugin]

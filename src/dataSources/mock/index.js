@@ -4,7 +4,8 @@ const {typeDef} = require('./typeDef');
 
 
 module.exports = {
-    MockDataApi,
+    name: 'MockData',
+    dataSource: MockDataApi,
     resolvers,
     typeDef
 }
