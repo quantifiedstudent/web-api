@@ -21,6 +21,8 @@ const dataSources = {};
 
 async function startApolloServer(expressApp) {
     const httpServer = http.createServer(expressApp);
+
+    // Load datasources
     sources.forEach(source => {
         typeDefs.push(source.typeDef);
         resolvers.push(source.resolvers);
@@ -34,8 +36,8 @@ async function startApolloServer(expressApp) {
             return dataSources;
         },
         context: ({req}) => {
-            console.log(req.headers)
             return {
+                // Req is the request object from express
                 // Add headers to the context, so we can forward them in the resolvers
                 Authorization: req.headers.authorization,
             }
@@ -45,6 +47,7 @@ async function startApolloServer(expressApp) {
 
     await server.start();
     server.applyMiddleware({ app: expressApp });
+
     await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve));
     console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
 }
