@@ -1,11 +1,11 @@
-const {MockDataApi} = require('./mock-api');
+const {WatchDataApi} = require('./watch-api');
 const {resolvers} = require('./resolvers');
 const {typeDef} = require('./typeDef');
 
 
 module.exports = {
-    name: 'MockData',
-    dataSource: MockDataApi,
+    name: 'WatchData',
+    dataSource: WatchDataApi,
     resolvers,
     typeDef
 }

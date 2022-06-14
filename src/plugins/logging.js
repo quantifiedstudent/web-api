@@ -4,9 +4,9 @@ const loggingPlugin = {
 
     async requestDidStart(requestContext) {
 
-        console.log('Request started! Query:\n'
+        // console.log('Request started! Query:\n'
            // + requestContext.request.query
-        );
+        // );
 
 
         return {
@@ -17,7 +17,7 @@ const loggingPlugin = {
 
             async parsingDidStart(requestContext) {
 
-                console.log('Parsing started!');
+                // console.log('Parsing started!');
 
             },
 
@@ -28,7 +28,7 @@ const loggingPlugin = {
 
             async validationDidStart(requestContext) {
 
-                console.log('Validation started!');
+                // console.log('Validation started!');
 
             },
 

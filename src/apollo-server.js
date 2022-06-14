@@ -2,8 +2,8 @@ const {gql, ApolloServer} = require("apollo-server-express");
 const {ApolloServerPluginDrainHttpServer} = require("apollo-server-core");
 const http = require("http");
 
-const MockData = require("./dataSources/mock");
 const CanvasData = require("./dataSources/canvas");
+const WatchData = require("./dataSources/smartWatch");
 const LoggingPlugin = require("./plugins/logging");
 
 const typeDef = gql`
@@ -11,7 +11,7 @@ const typeDef = gql`
 `;
 
 const sources = [
-    MockData,
+    WatchData,
     CanvasData
 ];
 
