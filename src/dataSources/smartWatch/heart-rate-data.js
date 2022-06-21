@@ -3,52 +3,52 @@ module.exports = {
   "valueType": "bpm",
   "datapoints": [
     {
-      "timestamp": "Jan",
-      "value": 65
+      "timestamp": 1611233538,
+      "value": 123
     },
     {
-      "timestamp": "Feb",
-      "value": 56
+      "timestamp": 1613911938,
+      "value": 80
     },
     {
-      "timestamp": "Mar",
-      "value": 84
+      "timestamp": 1616331138,
+      "value": 123
     },
     {
-      "timestamp": "Apr",
-      "value": 75
+      "timestamp": 1619009538,
+      "value": 100
     },
     {
-      "timestamp": "May",
-      "value": 45
+      "timestamp": 1621601538,
+      "value": 95
     },
     {
-      "timestamp": "Jun",
-      "value": 63
+      "timestamp": 1624279938,
+      "value": 110
     },
     {
-      "timestamp": "Jul",
-      "value": 65
+      "timestamp": 1626871938,
+      "value": 80
     },
     {
-      "timestamp": "Aug",
-      "value": 56
+      "timestamp": 1629550338,
+      "value": 120
     },
     {
-      "timestamp": "Sep",
-      "value": 84
+      "timestamp": 1632228738,
+      "value": 54
     },
     {
-      "timestamp": "Oct",
-      "value": 75
+      "timestamp": 1634820738,
+      "value": 95
     },
     {
-      "timestamp": "Nov",
-      "value": 45
+      "timestamp": 1637499138,
+      "value": 105
     },
     {
-      "timestamp": "Dec",
-      "value": 69
+      "timestamp": 1640091138,
+      "value": 93
     }
   ]
 }

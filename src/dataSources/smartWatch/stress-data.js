@@ -3,51 +3,51 @@ module.exports = {
   "valueType": "stress",
   "datapoints": [
     {
-      "timestamp": "Jan",
+      "timestamp": 1611233538,
       "value": 65
     },
     {
-      "timestamp": "Feb",
+      "timestamp": 1613911938,
       "value": 56
     },
     {
-      "timestamp": "Mar",
+      "timestamp": 1616331138,
       "value": 84
     },
     {
-      "timestamp": "Apr",
+      "timestamp": 1619009538,
       "value": 75
     },
     {
-      "timestamp": "May",
+      "timestamp": 1621601538,
       "value": 45
     },
     {
-      "timestamp": "Jun",
+      "timestamp": 1624279938,
       "value": 63
     },
     {
-      "timestamp": "Jul",
+      "timestamp": 1626871938,
       "value": 65
     },
     {
-      "timestamp": "Aug",
+      "timestamp": 1629550338,
       "value": 56
     },
     {
-      "timestamp": "Sep",
+      "timestamp": 1632228738,
       "value": 84
     },
     {
-      "timestamp": "Oct",
+      "timestamp": 1634820738,
       "value": 75
     },
     {
-      "timestamp": "Nov",
+      "timestamp": 1637499138,
       "value": 45
     },
     {
-      "timestamp": "Dec",
+      "timestamp": 1640091138,
       "value": 69
     }
   ]
